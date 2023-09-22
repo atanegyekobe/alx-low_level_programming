@@ -1,0 +1,4 @@
+#!/bin/bash
+source_file="$CFILE"
+output_file="${source_file%.c}.o"
+gcc -c "$source_file" -o "$output_file"
